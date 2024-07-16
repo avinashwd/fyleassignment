@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body {
+background-color: #ffffff
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.txtred{
+  color:#ff3147;
+  text-transform: uppercase
 }
+.flex{
+  display:flex
+  /* justify-content: center;
+  align-items: center; */
+}
+.txtnorm{
+  color:#000000;
+  font: Cormorant SC
+}
+section{
+  margin-top:100px;
+  height: 100vh
+}
+.bgred{
+  background-color: #ff3147;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.bgred:hover{
+  background-color: #ff3147;
+  color:#ffffff;
+  text-transform: uppercase
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.card{
+  margin: 5px
+  
+}
+.card:hover{
+  box-shadow: 3px 3px 5px #afafaf
+}
+.feedback{
+  background-image: url("../public/images/Quotemarks-left.svg");
+  background-repeat:no-repeat;
+  background-position: top left
+  
+}
+.comment{
+  
+  position:relative;
+  top:5px;
+  left:5px
+}
+#form{
+  display:none;
+  position: absolute;
+  top:40%;
+  left:30%;
+  background-color: #fafafa;
+  padding:10px
+}
+input[type='email']{
+  width: 100%;
+  border-width: 0 0 2px 0;
+  background-color: inherit;
+  font: normal normal normal 14px poppins;
+  padding: 5px
+}
+input[type='text']{
+  width:100%;
+  margin:auto;
+  border-width: 0 0 2px 0;
+  background-color: inherit;
+  font: normal normal normal 14px poppins;
+  padding:5px
+}
+input:focus{
+  border-width:0 0 2px 0;
+  outline-width: 0
+}
+label{
+  visibility:hidden;
+color: #888888;
+}
+input[type="checkbox"]{
+accent-color:#ff3147
+}
+input[type="checkbox"]:checked{
+  border-color:#ff3147
   }
+
+.imgslider{
+overflow: hidden;
+display: flex;
+align-items: center;
+}
+.imgcontainer{
+  position:relative;
+  width: 370px;
+height: 526px;
+margin: 10px;
+display: inline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.knowmore{
+  position:absolute;
+  display:none;
+  width:100%;
+  height:100%;
 }
-
-.App-link {
-  color: #61dafb;
+.imgcontainer:hover .knowmore{
+  top:0;
+  position: absolute;
+  display:block;
+  z-index: 4;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgcontainer:hover .imgcontainer>img{
+  display: none;
 }
